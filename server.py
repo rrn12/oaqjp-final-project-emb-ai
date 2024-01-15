@@ -17,7 +17,11 @@ def emot_detector():
         return "Invalid input ! Please try again!."
     list2 = list(response.keys())
     list3 = list(response.values())
-    return ("For the given statement, the system response is "+f"{list2[0]}: {list3[0]}, {list2[1]}: {list3[1]},"+f" {list2[2]}: {list3[2]}, {list2[3]}: {list3[3]}"+f" and {list2[4]}: {list3[4]}."+f" The {list2[5].split('_')[0]} {list2[5].split('_')[1]} is {list3[5]}")
+    return ("For the given statement, the system response is "
+    +f"{list2[0]}: {list3[0]}, {list2[1]}: {list3[1]},"
+    +f" {list2[2]}: {list3[2]}, {list2[3]}: {list3[3]}"
+    +f" and {list2[4]}: {list3[4]}."
+    +f" The {list2[5].split('_')[0]} {list2[5].split('_')[1]} is {list3[5]}")
 
 @app.route("/")
 
